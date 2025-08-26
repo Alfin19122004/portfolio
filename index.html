@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>Alfin-portfolio</title>
+    <link rel="icon" type="image/image" href="img\myicon.jpg">
+</head>
+
+<body>
+
+    <div id="navbar">
+        <nav>
+            <a href="#home">
+                <h6 id="logo">ALFIN B</h6>
+            </a>
+            <button class="hamburger-menu" onclick="toggleMenu()">
+                <i class="bi bi-list"></i>
+            </button>
+            <ul>
+                <li class="hideonmobile"><a href="#about">About</a></li>
+                <li class="hideonmobile"><a href="#mywork">My Work</a></li>
+                <li class="hideonmobile"><a href="#skill">Skills</a></li>
+                <li class="hideonmobile"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="sidebar-menu">
+        <button class="close-menu" onclick="toggleMenu()">
+            <i class="bi bi-x"></i>
+        </button>
+        <ul>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#mywork" onclick="toggleMenu()">My Work</a></li>
+            <li><a href="#skill" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+    </div>
+
+    <section id="home">
+        <img src="img/alfinimage.png" alt="Alfin's profile picture">
+        <div class="homecontent">
+            <h1>Hi, I am Alfin</h1>
+            <p>I am a freelance web developer</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-container">
+            <h2>About Me</h2>
+            <p>
+                Hi, I’m <a href="#home"><span class="highlight">Alfin B</span></a> — a freelance web developer passionate about creating
+                clean, responsive, and user-friendly websites.
+                I specialize in <strong>HTML, CSS, and JavaScript</strong>, and I enjoy bringing ideas to life through
+                code and design.
+            </p>
+            <p>
+                With a background in <strong>Electronics and Communication Engineering</strong>, I combine
+                problem-solving skills with creativity to build practical digital solutions.
+                I’ve also gained hands-on experience in <strong>IoT projects, embedded systems, and real-time
+                    applications</strong> during internships and hackathons.
+            </p>
+            <p>
+                Currently, I’m focused on web development projects and continuously improving my front-end skills. My
+                goal is to grow into a
+                <strong>full-stack developer</strong>, expanding my knowledge in backend technologies and modern
+                frameworks.
+            </p>
+        </div>
+
+    </section>
+
+    <section id="mywork">
+        <h2>My Work</h2>
+
+        <div class="work-list">
+            <a href="https://alfinportfolio.my.canva.site/alfin-website" target="_blank" class="work-item"
+                data-preview="img/canva.png">
+                <span>Personal Portfolio Website using canva</span>
+            </a>
+            <a href="#" class="work-item" data-preview="img/coming soon.png">
+                <span>E-Commerce Website (Coming Soon)</span>
+            </a>
+            <a href="#" class="work-item" data-preview="img/coming soon.png">
+                <span>Restaurant Site (coming soon)</span>
+            </a>
+        </div>
+
+        <div class="preview-box">
+            <img src="" width="350px" height="20px" alt="preview">
+        </div>
+    </section>
+
+    <section id="skill">
+        <h2>My Skills</h2>
+        <div class="skillsgrid">
+            <div class="skill-card">
+                <div class="skill-header">
+                    <h3><img src="img/icons8-html-5-50.png" alt="HTML5 Logo" class="skill-logo"> HTML5</h3>
+                    <span class="percent">90%</span>
+                </div>
+                <div class="progress-bar">
+                    <div style="width:90%">
+                    </div>
+                </div>
+                <p>Structuring and organizing content with semantic HTML5 for web accessibility..</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-header">
+                    <h3><img src="img/icons8-css-logo-50.png" alt="HTML5 Logo" class="skill-logo"> CSS3</h3><span class="percent">85%</span>
+                </div>
+                <div class="progress-bar">
+                    <div style="width:85%"></div>
+                </div>
+                <p>Designing and styling responsive layouts using modern techniques like Flexbox and Grid.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-header">
+                    <h3><img src="img/icons8-javascript-50.png" alt="HTML5 Logo" class="skill-logo"> JavaScript</h3><span class="percent">75%</span>
+                </div>
+                <div class="progress-bar">
+                    <div style="width:75%"></div>
+                </div>
+                <p>Creating dynamic user interfaces and interactive web applications with ES6+</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-header">
+                    <h3><img src="img/icons8-c++-50.png" alt="HTML5 Logo" class="skill-logo"> c++</h3><span class="percent">75%</span>
+                </div>
+                <div class="progress-bar">
+                    <div style="width:75%"></div>
+                </div>
+                <p>Building efficient, high-performance applications and system-level software.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-header">
+                    <h3><img src="img/icons8-python-50.png" alt="HTML5 Logo" class="skill-logo"> Python</h3><span class="percent">90%</span>
+                </div>
+                <div class="progress-bar">
+                    <div style="width:90%"></div>
+                </div>
+                <p>Developing backend services and automating tasks with a focus on clean, readable code.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-header">
+                    <h3><img src="img/icons8-github-30.png" alt="HTML5 Logo" class="skill-logo"> Git/GitHub</h3><span class="percent">80%</span>
+                </div>
+                <div class="progress-bar">
+                    <div style="width:80%"></div>
+                </div>
+                <p>Managing projects and collaborating on code using Git for version control.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-header">
+                    <h3><img src="img/icons8-tailwind-css-100.png" alt="HTML5 Logo" class="skill-logo"> Tailwind CSS</h3><span class="percent">75%</span>
+                </div>
+                <div class="progress-bar">
+                    <div style="width:75%"></div>
+                </div>
+                <p>Building custom user interfaces quickly using a utility-first CSS framework.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-header">
+                    <h3><img src="img/icons8-bootstrap-50.png" alt="HTML5 Logo" class="skill-logo"> Bootstrap</h3><span class="percent">85%</span>
+                </div>
+                <div class="progress-bar">
+                    <div style="width:85%"></div>
+                </div>
+                <p>Developing responsive web pages with a focus on pre-built components and a robust grid system.</p>
+            </div>
+        </div>
+
+        <div class="skill-stats">
+            <div>
+                <h3>1+</h3>
+                <p>Years Experience</p>
+            </div>
+            <div>
+                <h3>8</h3>
+                <p>Technologies</p>
+            </div>
+            <div>
+                <h3>75%</h3>
+                <p>Avg Proficiency</p>
+            </div>
+        </div>
+
+        <div class="extra-info">
+            <div class="info-box">
+                <h3><img src="img/icons8-learning-50.png" alt="HTML5 Logo" class="skill-logo"> Currently Learning</h3>
+                <ul>
+                    <li>React patterns and optimization</li>
+                    <li>TypeScript for better type safety</li>
+                    <li>Next.js for full-stack development</li>
+                    <li>Data structures and algorithms mastery</li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <h3><img src="img/icons8-group-of-projects-64.png" alt="HTML5 Logo" class="skill-logo"> Future Goals</h3>
+                <ul>
+                    <li>Cloud technologies (AWS, Azure)</li>
+                    <li>DevOps and CI/CD pipelines</li>
+                    <li>Mobile development with React Native</li>
+                    <li>Machine learning fundamentals</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-header">
+            <h2>Contact Me</h2>
+            <h3>Let's Work Together</h3>
+            <p>Have a project in mind? I'd love to hear from you!</p>
+            <span class="status">
+                <span class="dot"></span> Available for Work
+            </span>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-card form-card">
+                <h3>Send Me a Message</h3>
+                <form action="https://formspree.io/f/mandwjae" method="POST">
+                    <div class="form-row">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+            <div class="contact-card info-card">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li><i class="bi bi-envelope"></i> alfinblesson19@gmail.com</li>
+                    <li><i class="bi bi-geo-alt"></i> chennai, India</li>
+                    <li><i class="bi bi-phone"></i> +91 94898 68840</li>
+                </ul>
+
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <a href="http://www.linkedin.com/in/alfin-b-ba979727a" target="_blank"><i
+                            class="bi bi-linkedin"></i> linkedin</a>
+                    <a href="https://github.com/Alfin19122004" target="_blank"><i class="bi bi-github"></i>github</a>
+                    <a href="https://wa.me/919489868840?text=Hi%20Alfin%2C%20I%20visited%20your%20portfolio%20website"
+                        target="_blank"><i class="bi bi-whatsapp"></i>whatsapp</a>
+                </div>
+            </div>
+
+            <div class="contact-card response-card">
+                <h3>Quick Response</h3>
+                <p>I usually reply within <strong>24 hours</strong>.
+                    For urgent inquiries, connect with me on <a
+                        href="http://www.linkedin.com/in/alfin-b-ba979727a">LinkedIn</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Alfin. All rights reserved.</p>
+        <a href="#home"><i class="bi bi-arrow-bar-up"></i></a>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
