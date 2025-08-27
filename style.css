@@ -11,10 +11,7 @@ body {
     font-family: Arial, sans-serif;
     scroll-behavior: smooth;
     overflow-x: hidden;
-    /* Prevents horizontal scroll caused by the menu */
 }
-
-/* Base Styles (for all screen sizes) */
 
 nav {
     background-color: black;
@@ -33,7 +30,7 @@ nav {
 
 #logo {
     font-family: cursive;
-    color: orangered;
+    color: white;
     font-size: 35px;
     font-weight: bold;
     cursor: pointer;
@@ -374,6 +371,18 @@ section {
     color: #aaa;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 .skill-stats {
     display: flex;
     justify-content: center;
@@ -626,12 +635,30 @@ footer a {
     border-radius: 10px;
 }
 
-/* --- Mobile Responsiveness --- */
+
+
+@media (max-width: 976px) {
+
+ .form-row {
+        flex-direction: column;
+    }
+}
+@media (max-width: 350px) {
+   .skill-stats {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
 @media (max-width: 768px) {
     nav {
         width: 95%;
         padding: 10px 20px;
         justify-content: space-between;
+    }
+
+    #logo {
+        font-family: cursive;
     }
 
     .hideonmobile {
@@ -721,7 +748,7 @@ footer a {
     }
 
     .skill-stats {
-        flex-direction: column;
+        flex-direction: row;
         gap: 30px;
     }
 
